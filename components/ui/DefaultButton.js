@@ -1,6 +1,6 @@
 import React from "react";
 import { Pressable, Text, StyleSheet } from "react-native";
-import * as theme from "../constant/Theme"
+import * as theme from "../../constant/Theme"
 
 const DefaultButton = props => {
     console.log(props);

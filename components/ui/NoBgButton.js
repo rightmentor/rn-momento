@@ -1,6 +1,6 @@
 import React from "react";
 import { Pressable, Text , StyleSheet } from "react-native";
-import * as theme from "../constant/Theme"
+import * as theme from "../../constant/Theme"
 
 const NoBgButton = props => {
     console.log(props);
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     btnText: {
         color: theme.PrimaryColor,
         fontSize: 14,
-        fontWeight: 500
+        fontWeight: '500'
     }
 });
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 
-import * as theme from "../constant/Theme"
+import * as theme from "../../constant/Theme"
 
 const InputBox = props => {
     return (
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         fontSize: 12,
         color: theme.TextColor,
-        fontWeight: 500   
+        fontWeight: '500'   
     }
 });
 

@@ -6,15 +6,15 @@ import AppLoadingPlaceholder from 'expo';
 import MainNavigator from './navigator/MainNavigator';
 import AuthNavigator from './navigator/AuthNavigator';
 
-const fatchFonts = () => {
-  return Font.loadAsync({
-    'SFUIText-Light': require('./assets/fonts/SFUIText-Light.ttf'),
-    'SFUIText-Regular': require('./assets/fonts/SFUIText-Regular.ttf'),
-    'SFUIText-Medium': require('./assets/fonts/SFUIText-Medium.ttf'),
-    'SFUIText-Semibold': require('./assets/fonts/SFUIText-Semibold.ttf'),
-    'SFUIText-bold': require('./assets/fonts/SFUIText-bold.ttf')
-  })
-}
+// const fatchFonts = () => {
+//   return Font.loadAsync({
+//     'SFUIText-Light': require('./assets/fonts/SFUIText-Light.ttf'),
+//     'SFUIText-Regular': require('./assets/fonts/SFUIText-Regular.ttf'),
+//     'SFUIText-Medium': require('./assets/fonts/SFUIText-Medium.ttf'),
+//     'SFUIText-Semibold': require('./assets/fonts/SFUIText-Semibold.ttf'),
+//     'SFUIText-bold': require('./assets/fonts/SFUIText-bold.ttf')
+//   })
+// }
 
 export default function App() {
   // const [isFontLoaded, setIsFontLoaded] = useState(false);
@@ -28,8 +28,8 @@ export default function App() {
   // }
 
   return (
-    // <MainNavigator />
-    <AuthNavigator />
+    <MainNavigator />
+    // <AuthNavigator />
   );
 }
 

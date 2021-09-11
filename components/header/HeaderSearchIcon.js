@@ -1,21 +1,21 @@
 import React from "react";
 import { Pressable, Text, StyleSheet } from "react-native";
 import { MaterialIcons } from '@expo/vector-icons';
-import * as theme from "../constant/Theme"
+import * as theme from "../../constant/Theme"
 
-const HeaderLeft = props => {
+const HeaderSearchIcon = props => {
     return (
         <Pressable onPress={props.goBack}>
             {/* <Text style={styles.button} > back </Text> */}
-            <MaterialIcons style={styles.button} name="arrow-back-ios" size={24} color={theme.TextColor} />
+            <MaterialIcons style={styles.button} name="search" size={30} color={theme.TextColor} />
         </Pressable>
     );
 }
 
 const styles = StyleSheet.create({
     button: {
-        paddingLeft: 20
+        paddingRight: 10
     }
 });
 
-export default HeaderLeft;
+export default HeaderSearchIcon;

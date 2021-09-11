@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 import { FontAwesome5 } from '@expo/vector-icons';
 
-import * as theme from "../constant/Theme"
+import * as theme from "../../constant/Theme"
 
 const IconInputBox = props => {
     return (
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     inputBox: {
         fontSize: 12,
         color: theme.TextColor,
-        fontWeight: 500,
+        fontWeight: '500',
         width: '95%',
     }
 });

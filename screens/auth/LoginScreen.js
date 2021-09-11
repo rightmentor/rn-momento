@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-import DefaultText from '../../components/DefaultText';
-import DefaultButton from '../../components/DefaultButton';
-import NoBgButton from '../../components/NoBgButton';
-import InputBox from '../../components/InputBox';
+import DefaultText from '../../components/ui/DefaultText';
+import DefaultButton from '../../components/ui/DefaultButton';
+import NoBgButton from '../../components/ui/NoBgButton';
+import InputBox from '../../components/ui/InputBox';
 
 const LoginScreen = props => {
     const [emailInput, setEmailInput] = useState();

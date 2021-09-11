@@ -2,9 +2,9 @@ import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
 import Logo from '../components/Logo';
-import DefaultText from '../components/DefaultText';
-import DefaultButton from '../components/DefaultButton';
-import NoBgButton from '../components/NoBgButton';
+import DefaultText from '../components/ui/DefaultText';
+import DefaultButton from '../components/ui/DefaultButton';
+import NoBgButton from '../components/ui/NoBgButton';
 
 const StartScreen = props => {
 

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-import DefaultText from '../../components/DefaultText';
-import DefaultButton from '../../components/DefaultButton';
-import InputBox from '../../components/InputBox';
-import IconInputBox from '../../components/IconInputBox';
+import DefaultText from '../../components/ui/DefaultText';
+import DefaultButton from '../../components/ui/DefaultButton';
+import InputBox from '../../components/ui/InputBox';
+import IconInputBox from '../../components/ui/IconInputBox';
 
 const ProfileSetUpScreen = props => {
     const [fullNameInput, setFullNameInput] = useState();
