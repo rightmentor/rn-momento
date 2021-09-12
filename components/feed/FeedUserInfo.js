@@ -7,10 +7,10 @@ import DefaultText from "../ui/DefaultText"
 const FeedUserInfo = props => {
     return (
         <View style={styles.feedInfoContainer}>
-            <CircleImage />
-            <View style={styles.nameTimeContainer}>
-                <DefaultText style={styles.userName}>Melissa Berry</DefaultText>
-                <DefaultText style={styles.lightText}>10 mins ago</DefaultText>
+            <CircleImage style={props.avtarStyle} />
+            <View style={[styles.nameTimeContainer, props.nameContainerStyle]}>
+                <DefaultText style={[styles.userName, props.nameStyle]}>Melissa Berry</DefaultText>
+                <DefaultText style={[styles.lightText, props.infoStyle]}>10 mins ago</DefaultText>
             </View>
         </View>
     );

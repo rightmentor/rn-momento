@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
 import * as theme from "../../constant/Theme"
 import CircleImage from '../ui/CircleImage';
@@ -8,9 +8,7 @@ import DefaultText from '../ui/DefaultText';
 const CommentItem = props => {
     return (
         <View style={styles.container}>
-            {/* <View style={styles.profilePicContainer}> */}
-                <CircleImage style={styles.profilePic} />
-            {/* </View> */}
+            <CircleImage style={styles.profilePic} />
             <View style={styles.commentContent}>
                 <View style={styles.commentHead}>
                     <DefaultText style={styles.user}>Melissa</DefaultText>
@@ -25,6 +23,7 @@ const CommentItem = props => {
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
+        alignItems: 'flex-start',
         marginBottom: 25
     },
     profilePic: {
@@ -33,13 +32,12 @@ const styles = StyleSheet.create({
     },
     commentContent: {
         marginLeft: 10,
-        width: '100%'
+        flex: 1
     },
     commentHead: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginBottom: 7,
-        width: '100%'
+        marginBottom: 7
     },
     user: {
         fontSize: 12,
@@ -53,7 +51,7 @@ const styles = StyleSheet.create({
     comment: {
         fontSize: 10,
     }
-    
+
 });
 
 export default CommentItem;

@@ -14,7 +14,7 @@ const HeaderBackIcon = props => {
 
 const styles = StyleSheet.create({
     button: {
-        paddingLeft: 10
+        paddingLeft: 20
     }
 });
 

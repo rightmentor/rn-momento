@@ -15,8 +15,8 @@ const CreateFeedButton = props => {
 const styles = StyleSheet.create({
     button: {
         position: 'absolute',
-        bottom: 20,
-        right: 20,
+        bottom: 15,
+        right: 15,
         backgroundColor: theme.PrimaryColor,
         paddingHorizontal: 12,
         paddingVertical: 10,

@@ -13,7 +13,7 @@ const HeaderDrawerIcon = props => {
 
 const styles = StyleSheet.create({
     button: {
-        paddingLeft: 10
+        paddingLeft: 15
     }
 });
 
