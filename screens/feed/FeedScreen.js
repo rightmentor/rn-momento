@@ -7,7 +7,7 @@ import CreateFeedButton from '../../components/CreateFeedButton';
 const FeedScreen = props => {
 
     const openFeedDetailHandler = () => {
-        props.navigation.navigate('feedDetails', { name: 'Melissa\'s Moments' })
+        props.navigation.navigate('feedDetails', { name: 'Melissa' })
     }
 
     const likeFeedHandler = () => {

@@ -7,7 +7,7 @@ import * as theme from '../constant/Theme';
 import FeedUserInfo from "../components/feed/FeedUserInfo";
 
 const DrawerContent = props => {
-    console.log(props);
+    
     return (
         <DrawerContentScrollView {...props}>
             <View style={styles.profileContainer}>
@@ -52,7 +52,7 @@ const DrawerContent = props => {
                 label={"Saved by me"}
                 labelStyle={styles.itemLabel}
                 style={styles.drawerItem}
-                onPress={() => { }}
+                onPress={() => { props.navigation.navigate('savebyme') }}
             />
             <DrawerItem
                 icon={({ size, color }) => (

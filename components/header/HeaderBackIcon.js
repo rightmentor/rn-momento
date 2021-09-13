@@ -1,9 +1,13 @@
 import React from "react";
 import { Pressable, Text, StyleSheet } from "react-native";
 import { MaterialIcons } from '@expo/vector-icons';
+
+
 import * as theme from "../../constant/Theme"
 
 const HeaderBackIcon = props => {
+    console.log('props: ', props);
+    // props.navigation.dispatch(NavigationActions.back())
     return (
         <Pressable onPress={props.goBack}>
             {/* <Text style={styles.button} > back </Text> */}

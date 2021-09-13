@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
         color: theme.TextColor,
         fontWeight: '500',
         width: '95%',
+        outlineWidth: 0
     }
 });
 

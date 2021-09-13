@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         fontSize: 12,
         color: theme.TextColor,
-        fontWeight: '500'   
+        fontWeight: '500',
+        outlineWidth: 0   
     }
 });
 
