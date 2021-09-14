@@ -54,7 +54,7 @@ const FeedDetailsScreen = props => {
             <CommentItem />
             <CommentItem />
 
-            <MessageInput />
+            <MessageInput containerStyle={styles.inputboxContainer} />
         </ScrollView>
     );
 }
@@ -129,6 +129,9 @@ const styles = StyleSheet.create({
         textDecorationLine: "underline",
         fontSize: 10,
         fontWeight: '500'
+    },
+    inputboxContainer: {
+        marginHorizontal: -20,
     }
 })
 

@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     },
     time: {
         fontSize: 10,
-        fontWeight: 300,
+        fontWeight: '300',
         color: theme.LightTextColor
     },
     comment: {

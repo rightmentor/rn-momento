@@ -43,7 +43,7 @@ const DrawerContent = props => {
                 label={"Chats"}
                 labelStyle={styles.itemLabel}
                 style={styles.drawerItem}
-                onPress={() => { }}
+                onPress={() => { props.navigation.navigate('chats') }}
             />
             <DrawerItem
                 icon={({ size, color }) => (
@@ -61,7 +61,7 @@ const DrawerContent = props => {
                 label={"Settings"}
                 labelStyle={styles.itemLabel}
                 style={styles.drawerItem}
-                onPress={() => { props.navigation.navigate('Settings')}}
+                onPress={() => { props.navigation.navigate('settings')}}
             />
             <DrawerItem
                 icon={({ size, color }) => (

@@ -6,7 +6,7 @@ import * as theme from '../constant/Theme';
 
 const MessageInput = props => {
     return (
-        <View style={styles.container}>
+        <View style={[styles.container, props.containerStyle]}>
             <TextInput placeholder="Write Comment..." style={styles.inputBox} />
             <MaterialIcons name="sentiment-satisfied-alt" size={30} color={theme.TextColor} style={styles.icon} />
             <Image source={require('../assets/send.png')} style={styles.sendImage} />
@@ -17,7 +17,7 @@ const MessageInput = props => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        marginHorizontal: -20,
+        // marginHorizontal: -20,
         paddingVertical: 7,
         paddingHorizontal: 10,
         flexDirection: 'row',
