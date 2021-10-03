@@ -1,40 +1,25 @@
-import React, { useState } from 'react';
-import { StyleSheet } from 'react-native';
-import * as Font from 'expo-font';
-import AppLoadingPlaceholder from 'expo';
-
-import MainNavigator from './navigator/MainNavigator';
-import AuthNavigator from './navigator/AuthNavigator';
-
-// const fatchFonts = () => {
-//   return Font.loadAsync({
-//     'SFUIText-Light': require('./assets/fonts/SFUIText-Light.ttf'),
-//     'SFUIText-Regular': require('./assets/fonts/SFUIText-Regular.ttf'),
-//     'SFUIText-Medium': require('./assets/fonts/SFUIText-Medium.ttf'),
-//     'SFUIText-Semibold': require('./assets/fonts/SFUIText-Semibold.ttf'),
-//     'SFUIText-bold': require('./assets/fonts/SFUIText-bold.ttf')
-//   })
-// }
+import React from 'react';
+import { useFonts } from 'expo-font';
+import AppLoading from 'expo-app-loading';
+import MainNavigator from './navigator/main';
 
 export default function App() {
-  // const [isFontLoaded, setIsFontLoaded] = useState(false);
+  const [loaded] = useFonts({
+    'Inter-Black': require('./assets/fonts/Inter-Black.ttf'),
+    'Inter-Bold': require('./assets/fonts/Inter-Bold.ttf'),
+    'Inter-ExtraBold': require('./assets/fonts/Inter-ExtraBold.ttf'),
+    'Inter-Light': require('./assets/fonts/Inter-Light.ttf'),
+    'Inter-Medium': require('./assets/fonts/Inter-Medium.ttf'),
+    'Inter-Regular': require('./assets/fonts/Inter-Regular.ttf'),
+    'Inter-SemiBold': require('./assets/fonts/Inter-SemiBold.ttf'),
+  });
 
-  // if (!isFontLoaded) {
-  //   return (
-  //     <AppLoadingPlaceholder
-  //       startAsync={fatchFonts}
-  //       onFinish={() => setIsFontLoaded(true)}
-  //     />);
-  // }
+  if (!loaded) {
+    return <AppLoading />;
+  } else {
+    return (
+      <MainNavigator></MainNavigator>
+    );
+  }
 
-  return (
-    <MainNavigator />
-    // <AuthNavigator />
-  );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  },
-});
